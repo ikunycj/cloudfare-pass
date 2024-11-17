@@ -1,4 +1,5 @@
 # 破解 Cloudflare 5s 盾
+## 声明：此项目仅供学习使用，严禁任何商业，违法行为
 ## 开发环境准备(针对不熟悉python虚拟环境的用户，可跳过)
 更多请参照[fastapi虚拟环境配置文档](https://fastapi.tiangolo.com/zh/virtual-environments/)
 ```bash
@@ -59,7 +60,7 @@ docker compose run web python tests/test_v2.py
 | 字段 | 类型 | 描述                       | 举例                      |
 |:---|:---|:-------------------------|-------------------------|
 | url | string | 需要绕过的url  | https://chatgpt.com     |
-| proxy_server | string | 代理服务器地址（不填默认为本机）         | http://12.34.56.78:7890 |
+| proxy_server | string | 代理服务器地址（不填默认为本机）         | http://localhost:7890 |
 
 ### 返回参数
 | 字段         | 类型     | 描述            |
